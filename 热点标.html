@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tu{
+            width: 800px;
+            height:800px;
+            background-color: rgba(230, 28, 55, 0.24);
+            /* background: url(D:\WEB\study\好玩的设计\image\1.jpg) #cccccc no-repeat; */
+            margin: 0 auto;
+            position: relative;
+        }
+        .rei {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        
+        }
+        .tb2 {
+            top: 300px;
+            left: 350px;
+        }
+        .dotted {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgba(35, 105, 114, 0.24);
+        }
+        
+        .rei div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(35, 105, 114, 0.247);
+            animation: pulse 1.5s linear infinite;
+        }
+        .rei div.pulse2 {
+            animation-delay: 0.5s;
+        }
+        .rei div.pulse3 {
+            animation-delay: 1s;
+        }
+        @keyframes pulse {
+            0% {
+
+            }
+            50% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tu">
+        <div class="rei">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="rei tb2">
+                <div class="dotted"></div>
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div>
+    </div>
+</body>
+</html>
